@@ -1,0 +1,38 @@
+<html>
+    
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Libreria - Aggiungi Libro</title>
+        
+    </head>
+    
+    <body>
+        
+        <H1>Inserisci i dati del libro</H1>
+        <BR>
+        <BR>
+        <FORM METHOD="POST" ACTION="AggiungiLibroServlet">
+            <BR>ISBN: <INPUT TYPE="text" NAME="isbn" SIZE=40>
+            <BR>
+            <BR>Titolo: <INPUT TYPE="text" NAME="titolo" SIZE=40>
+            <BR>
+            <BR>Autori: <INPUT TYPE="text" NAME="autori" SIZE=40>
+            <BR>
+            <BR>Casa Editrice: <INPUT TYPE="text" NAME="casaEditrice" SIZE=40>
+            <BR>
+            <BR>Prezzo: <INPUT TYPE="text" NAME="prezzo" SIZE=40>
+            <BR>
+            <BR>
+            <BR>
+            <INPUT TYPE=submit NAME="Submit" VALUE="Ok">
+            <INPUT TYPE=reset NAME="Cancel" VALUE="Annulla">
+        </FORM>
+        
+        <FORM ACTION="index.html" METHOD="GET">
+            <INPUT TYPE="SUBMIT" NAME="Back" VALUE="Back">
+        </FORM>
+        
+    </body>
+    
+</html>
