@@ -48,7 +48,7 @@ public class AggiungiLibroServlet extends HttpServlet
 
             //connessione jdbc al database
             Class.forName("com.mysql.jdbc.Driver");
-            String database = "jdbc:derby://localhost:1527/libreria";
+            String database = "jdbc:mysql://localhost:3306/libreria";
             String user = "root";
             String password = "admin";
             conn = DriverManager.getConnection(database, user, password);
