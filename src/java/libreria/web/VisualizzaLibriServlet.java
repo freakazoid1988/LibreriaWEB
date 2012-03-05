@@ -44,9 +44,9 @@ public class VisualizzaLibriServlet extends HttpServlet
         try {
             // connessione jdbc al database
             Class.forName("com.mysql.jdbc.Driver");
-            String database = "jdbc:derby://localhost:1527/libreria";
+            String database = "jdbc:mysql://localhost:3306/nome";
             String user = "root";
-            String password = "admin";
+            String password = "root";
             conn = DriverManager.getConnection(database, user, password);
 
             //query selezione libri
